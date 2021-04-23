@@ -71,6 +71,17 @@ select {
 }
 
 
+/* 
+- [ ] doesnt Google use 'White' as color naming?
+- [ ] refractor color var names
+- [ ] why are Google's color palette naming handy?
+- [ ] webpack?  
+- [ ] background var
+- [ ] box-shadow var
+- [ ] border style var
+- [ ] border var name
+*/
+
 :root {
   /* # Colors */    
     /* ## Primary */
