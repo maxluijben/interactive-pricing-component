@@ -104,6 +104,15 @@ select {
     --fw-normal:  600;
     --fw-bold:    800;
     --fs-default: 15px;
+    
+  /* # ... */
+    --shd-500: 0px 5px 10px rgba(0,0,0,.05);
+    --bgi-swoosh: url(images/bg-pattern.svg);
+    --bgi-circles: url(images/pattern-circles.svg);
+    --bor-on-surface: 1px solid var(--clr-surface-200);
+    --bor-radius: 10px;
+    --container-width: 375px;
+    --container-width-large: 1440px;
 }
 
 html {
@@ -115,6 +124,8 @@ body {
   font-weight:  var(--fw-normal);
   color:        var(--clr-on-surface-emph-med);
   background-color:   var(--clr-surface-100);
+  background-image:   var(--bgi-swoosh);
+  background-repeat:  no-repeat;
 }
 
 h1 {
@@ -131,7 +142,7 @@ main {
 
 .container {
   margin: 0 auto;
-  max-width: 375px;
+  max-width: var(--container-width);
 }
 
 header {
@@ -139,4 +150,79 @@ header {
   padding-bottom:  2rem;
   margin-top:      2rem;
   margin-bottom:   2rem;
+  background-image:     var(--bgi-circles);
+  background-repeat:    no-repeat;
+  background-position:  center;
+  background-size:      contain;
+}
+
+
+
+.card {
+  background:     var(--clr-white);
+  box-shadow:     var(--shd-500);
+  border-radius:  var(--bor-radius);
+}
+.card-content,
+.card-bottom {
+  padding:  2rem;
+}
+.card-bottom{
+  border-top: var(--bor-on-surface);
+}
+
+
+
+
+.range-slider {
+  height: 10px;
+  margin: 3rem 0;
+  position: relative;
+}
+.range-slider-empty,
+.range-slider-full {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+}
+.range-slider-empty {
+  background-color: var(--clr-surface-200);
+}
+.range-slider-full {
+  background-color: var(--clr-secondary-surface);
+}
+.range-slider-thumb {
+  height: 40px;
+  width: 40px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  transform: translateY(-40%);
+  background-color: var(--clr-secondary-on-surface);
+  border-radius: 50%;
+}
+
+
+
+.pricing-plan-price { 
+  font-size: 2.4rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-on-surface-emph-high);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.pricing-plan-price small {
+  font-size: 1rem;
+  font-weight: var(--fw-normal);
+  color: var(--clr-on-surface-emph-med);
+  margin-left: 5px;  
+}
+
+
+.usp-list-item {
+  display: list-item;
 }
