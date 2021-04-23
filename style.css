@@ -131,8 +131,9 @@ html {
 }
 
 body {
+  font-size:    1rem;
   font-family:  var(--ff-primary);
-  font-weight:  var(--fw-normal);
+  font-weight:  var(--fw-normal);  
   color:        var(--clr-on-surface-emph-med);
   background-color:   var(--clr-surface-100);
   background-image:   var(--bgi-swoosh);
