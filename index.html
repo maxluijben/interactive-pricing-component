@@ -7,33 +7,54 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive pricing component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
-
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <header>
+    <div class="container">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial.</p>
+      <p>No credit card required.</p>
+    </div>    
+  </header>
+  <main>
+    <div class="container">
+      <div class="card card-pricing">
+        <div class="card-content">
+          <div class="pricing-traffic">
+            100k pageviews
+          </div>
+          <div class="pricing-range-slider range-slider">            
+            <span class="range-slider-empty"></span>
+            <span class="range-slider-full"></span>
+            <span class="range-slider-thumb"></span>            
+          </div>
+          <div class="pricing-plan-price monthly">
+            €16.00 <small>/ month</small>
+          </div>
+          <div class="pricing-plan-price yearly">
+            €16.00 <small>/ year</small>
+          </div>
+          <div class="pricing-plan-switch">
+            <label for="pricing-plan-switch">Monthly plan</label>
+            <input type="checkbox" name="pricing-plan-switch" id="pricing-plan-switch">
+            <label for="pricing-plan">Yearly plan</label>
+            <span class="pricing-plan-discount">-25%</span>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <ul class="usp-list">
+            <li class="usp-list-item">Unlimited websites</li>
+            <li class="usp-list-item">100% data ownership</li>
+            <li class="usp-list-item">Email reports</li>
+          </ul>
+          <button type="button">
+            <a href="#">
+              Start my trial
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>    
+  </main>
 </body>
 </html>
