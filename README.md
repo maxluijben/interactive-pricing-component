@@ -1,5 +1,44 @@
 # Frontend Mentor - Interactive pricing component
 
+## Description
+This is a solution to the [Interactive pricing component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+
+### Features
+
+- Not much at the moment...
+
+### Notable notes
+
+- I am a poor student💸 so had to do the free version of this challenge, this ment i had no Figma or Sketch files at my disposal, thus meaning there will probably be minor inaccuraties regarding the design implementation.
+
+### My aims for this challenge, what i wanted to learn
+
+Besides the actual challenge itself, i also wanted to aim on- and include the following topics/challenges to practice and become more comfortable with:
+
+- Working with Git
+  - Working with Git from command-line
+  - Github hosting
+  - Properly etting up and maintaining Github repo
+  - ...and more
+- Accessibility, make the range-slider also accessible for assistive technologies and visually impared users
+- Overall practice with JS
+- Setup the slider component code so it could be used as a true reusable component, also it's inner sub-components like the toggle
+- Modular, sustainable, reusable/component-based, semantic and robust code
+  - Generic, reusable HTML atrributes (classes, ID's and custom data-attributes)
+  - Proper design system variables in CSS
+  - Reusable JS
+- ? SCSS and ESNext? Good opportunity to implement Webpack, but also good practice to work with vanilla CSS variables
+- ? Dark theme
+
+## Tasks
+
+- [ ] Clean up the original readme, refractor what you want to keep, delete what not.
+- [ ] Clean up directory (include source files in sperate directory?)
+
+
+**Below you'll find the original readme.**
+
+
 ![Design preview for the Interactive pricing component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
