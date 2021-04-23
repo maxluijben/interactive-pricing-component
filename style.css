@@ -9,8 +9,8 @@
 }
 
 /* Remove default padding */
-ul[class],
-ol[class] {
+ul,
+ol {
   padding: 0;
 }
 
@@ -21,8 +21,8 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -173,6 +173,11 @@ header {
   color: var(--clr-surface-300);
   text-decoration: none;
   cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.button:hover {
+  color: var(--clr-surface-100);
+  transform: translateY(-0.25rem);
 }
 
 
@@ -181,14 +186,20 @@ header {
   box-shadow:     var(--shd-500);
   border-radius:  var(--bor-radius);
 }
-.card-content,
-.card-bottom {
+.card-body {
   padding:  2rem;
+  width: 100%;
+  border-bottom: var(--bor-on-surface);
 }
-.card-bottom{
-  border-top: var(--bor-on-surface);
+.card-body:last-child {
+  border-bottom: 0;
 }
-
+.card-body > * {
+  margin-bottom: 30px;
+}
+.card-body > *:last-child {
+  margin-bottom: 0;
+}
 
 
 
