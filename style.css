@@ -98,4 +98,10 @@ select {
       --clr-on-surface-emph-med: hsl(225, 20%, 60%);
       /* Dark Desaturated Blue (Text & CTA Background) */
       --clr-on-surface-emph-high: hsl(227, 35%, 25%);
+
+  /* # Font settings */
+    --ff-primary: 'Manrope', sans-serif;
+    --fw-normal:  600;
+    --fw-bold:    800;
+    --fs-default: 15px;
 }
