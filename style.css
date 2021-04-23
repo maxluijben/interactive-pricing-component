@@ -105,3 +105,38 @@ select {
     --fw-bold:    800;
     --fs-default: 15px;
 }
+
+html {
+  font-size: var(--fs-default);
+}
+
+body {
+  font-family:  var(--ff-primary);
+  font-weight:  var(--fw-normal);
+  color:        var(--clr-on-surface-emph-med);
+  background-color:   var(--clr-surface-100);
+}
+
+h1 {
+  font-size:      1.5rem;
+  font-weight:    var(--fw-bold);
+  color:          var(--clr-on-surface-emph-high);
+  margin-bottom:  1rem;
+}
+
+header, 
+main {
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 375px;
+}
+
+header {
+  padding-top:     2rem;
+  padding-bottom:  2rem;
+  margin-top:      2rem;
+  margin-bottom:   2rem;
+}
