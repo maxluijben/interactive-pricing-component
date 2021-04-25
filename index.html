@@ -25,7 +25,7 @@
     <div class="container">
       <div class="card card-pricing align-text-center">
         <div class="card-body">
-          <div class="pricing-traffic">
+          <div id="traffic" class="pricing-traffic">
             100k pageviews
           </div>
           <input id="pricing-range" type="range" aria-labelledby=""
@@ -38,10 +38,14 @@
             aria-valuenow="2"
             aria-valuetext="">
           <div class="pricing-plan-price monthly">
-            €16.00 <small>/ month</small>
+            <label for="pricing-range">
+              <span id="pricing-price-monthly">€16.00</span><small> / month</small>
+            </label>
           </div>
           <div class="pricing-plan-price yearly">
-            €16.00 <small>/ year</small>
+            <label for="pricing-range">
+              <span id="pricing-price-yearly">€16.00</span><small> / year</small>
+            </label>
           </div>
           <div class="pricing-plan-switch">
             <label for="pricing-plan-switch">Monthly plan</label>
@@ -64,5 +68,6 @@
       </div>
     </div>    
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
