@@ -65,7 +65,7 @@ function updatePricing() {
 
 function updateSliderBackground() {
   const trackPos = (priceSlider.value / priceSlider.max * 100)
-  priceSlider.style.setProperty('--trackPos', trackPos + '%')
+  document.documentElement.style.setProperty('--trackPos', trackPos + '%')
 }
 
 window.addEventListener('load', updateSliderBackground)
