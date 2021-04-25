@@ -68,6 +68,7 @@ function updateSliderBackground() {
   priceSlider.style.setProperty('--trackPos', trackPos + '%')
 }
 
+window.addEventListener('load', updateSliderBackground)
 priceSlider.addEventListener('input', updatePricing)
 priceSlider.addEventListener('input', updateSliderBackground)
 
