@@ -119,13 +119,17 @@ select {
     --fs-default: 15px;
     
   /* # ... */
-    --shd-500: 0px 5px 10px rgba(0,0,0,.05);
-    --bgi-swoosh: url(images/bg-pattern.svg);
-    --bgi-circles: url(images/pattern-circles.svg);
+    --shd-500: 0px 5px 10px rgba(0,0,0,.05);    
     --bor-on-surface: 1px solid var(--clr-surface-300);
     --bor-radius: 10px;
     --container-width: 375px;
     --container-width-large: 1440px;
+  
+  /* # Images */
+    --img-swoosh:   url('images/bg-pattern.svg');
+    --img-circles:  url('images/pattern-circles.svg');
+    --ico-slider:   url('images/icon-slider.svg');
+    --ico-check:    url('images/icon-check.svg');
 }
 
 html {
@@ -138,7 +142,7 @@ body {
   font-weight:  var(--fw-normal);  
   color:        var(--clr-on-surface-emph-med);
   background-color:   var(--clr-surface-100);
-  background-image:   var(--bgi-swoosh);
+  background-image:   var(--img-swoosh);
   background-repeat:  no-repeat;
 }
 
@@ -159,7 +163,7 @@ header {
   padding-bottom:  2rem;
   margin-top:      2rem;
   margin-bottom:   2rem;
-  background-image:     var(--bgi-circles);
+  background-image:     var(--img-circles);
   background-repeat:    no-repeat;
   background-position:  center;
   background-size:      contain;
@@ -288,7 +292,7 @@ input[type=range]::-webkit-slider-thumb {
   background-color: var(--clr-secondary-on-surface);
   box-shadow: 0px 15px 31px var(--clr-secondary-on-surface);
 
-  background-image: url('images/icon-slider.svg');
+  background-image: var(--ico-slider);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -309,7 +313,7 @@ input[type=range]::-moz-range-thumb {
   background-color: var(--clr-secondary-on-surface);
   box-shadow: 0px 15px 31px var(--clr-secondary-on-surface);
 
-  background-image: url('images/icon-slider.svg');
+  background-image: var(--ico-slider);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -323,7 +327,7 @@ input[type=range]::-ms-thumb {
   background-color: var(--clr-secondary-on-surface);
   box-shadow: 0px 15px 31px var(--clr-secondary-on-surface);
 
-  background-image: url('images/icon-slider.svg');
+  background-image: var(--ico-slider);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -401,7 +405,7 @@ input[type=range]::-ms-fill-upper {
   width: 20px;
   height: 10px;
   display: inline-flex;
-  background-image: url(images/icon-check.svg);
+  background-image: var(--ico-check);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
