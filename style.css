@@ -40,9 +40,9 @@ body {
   line-height: 1.5;
 }
 
-/* Remove list styles on ul, ol elements with a class attribute */
-ul[class],
-ol[class] {
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
   list-style: none;
 }
 
@@ -120,7 +120,7 @@ select {
     --shd-500: 0px 5px 10px rgba(0,0,0,.05);
     --bgi-swoosh: url(images/bg-pattern.svg);
     --bgi-circles: url(images/pattern-circles.svg);
-    --bor-on-surface: 1px solid var(--clr-surface-200);
+    --bor-on-surface: 1px solid var(--clr-surface-300);
     --bor-radius: 10px;
     --container-width: 375px;
     --container-width-large: 1440px;
@@ -252,8 +252,27 @@ header {
 }
 
 
+
+/* TODO: increase size of icons */
+/* .usp-list {
+  list-style: disc;
+} */
 .usp-list-item {
-  display: list-item;
+  margin-bottom: 10px;
+}
+.usp-list-item:last-child {
+  margin-bottom: 0;
+}
+.usp-list-item::before {
+  content: '';
+  margin-right: 10px;
+  width: 20px;
+  height: 10px;
+  display: inline-flex;
+  background-image: url(images/icon-check.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 
