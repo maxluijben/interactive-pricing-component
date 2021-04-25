@@ -63,7 +63,12 @@ function updatePricing() {
   console.log('index', index, 'price', priceRangeObj[index])
 }
 
+function updateSliderBackground() {
+  const trackPos = (priceSlider.value / priceSlider.max * 100)
+  priceSlider.style.setProperty('--trackPos', trackPos + '%')
+}
 
 priceSlider.addEventListener('input', updatePricing)
+priceSlider.addEventListener('input', updateSliderBackground)
 
 
