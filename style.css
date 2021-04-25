@@ -80,6 +80,8 @@ select {
 - [ ] box-shadow var
 - [ ] border style var
 - [ ] border var name
+- [ ] better to reboot instead of reset css?
+- [ ] make card suitable for component isolation - or should it inherit global styles?
 */
 
 :root {
