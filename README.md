@@ -7,6 +7,10 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
 
 - Not much at the moment...
 
+### Roadmap
+
+- Soon to be announced 
+
 ### Notable notes
 
 - I am a poor student💸 so had to do the free version of this challenge, this ment i had no Figma or Sketch files at my disposal, thus meaning there will probably be minor inaccuraties regarding the design implementation.
@@ -29,6 +33,7 @@ Besides the actual challenge itself, i also wanted to aim on- and include the fo
   - Reusable JS
 - ? SCSS and ESNext? Good opportunity to implement Webpack, but also good practice to work with vanilla CSS variables
 - ? Dark theme
+- ? Gather data by API / Ajax
 
 ## Tasks
 
